@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İletişim — Baykuş Hukuk</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-left"><span>📞 <a href="tel:+902120000000">+90 212 000 00 00</a></span><span>✉ <a href="mailto:info@baykushukuk.com">info@baykushukuk.com</a></span></div>
+  <div class="topbar-right"><span>🕐 Pzt–Cum 09:00–18:00</span></div>
+</div>
+<nav>
+  <a href="index.html" class="logo"><span class="logo-owl">🦉</span> Baykuş Hukuk</a>
+  <div class="nav-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="makaleler.html">Makaleler</a>
+    <a href="gundem.html">Gündem</a>
+    <a href="hizmetler.html">Hizmetler</a>
+    <a href="linkler.html">Hukuki Linkler</a>
+    <a href="iletisim.html" class="active">İletişim</a>
+    <a href="admin/giris.html" class="nav-admin-btn">🔒 Admin</a>
+  </div>
+</nav>
+<div class="breadcrumb"><a href="index.html">Ana Sayfa</a> <span>›</span> <strong>İletişim</strong></div>
+<div class="main-wrap full">
+  <div class="content-area">
+    <div class="section">
+      <div class="section-title">Bize Ulaşın</div>
+      <div class="gold-line"></div>
+      <p class="section-subtitle">Hukuki danışmanlık için aşağıdaki formu doldurabilir veya doğrudan iletişime geçebilirsiniz.</p>
+
+      <div class="contact-grid">
+        <div>
+          <div style="margin-bottom:2rem">
+            <div class="contact-item"><div class="c-icon">📍</div><div><div class="c-label">Adres</div><div class="c-val" data-setting="address">Bağcılar Mahallesi, Hukuk Sokak No:12/5<br>Bağcılar / İstanbul</div></div></div>
+            <div class="contact-item"><div class="c-icon">📞</div><div><div class="c-label">Telefon</div><div class="c-val" data-setting="phone">+90 212 000 00 00</div></div></div>
+            <div class="contact-item"><div class="c-icon">✉️</div><div><div class="c-label">E-posta</div><div class="c-val" data-setting="email">info@baykushukuk.com</div></div></div>
+            <div class="contact-item"><div class="c-icon">🕐</div><div><div class="c-label">Çalışma Saatleri</div><div class="c-val" data-setting="hours">Pzt–Cum: 09:00–18:00 | Cmt: 10:00–14:00</div></div></div>
+          </div>
+
+          <div class="contact-form">
+            <h3 style="font-family:'Playfair Display',serif;color:var(--navy);margin-bottom:1.2rem;font-size:1.1rem">Mesaj Gönderin</h3>
+            <div class="form-group"><label class="form-label">Adınız Soyadınız *</label><input class="form-input" id="cf-name" type="text" placeholder="Ahmet Yılmaz"></div>
+            <div class="form-group"><label class="form-label">E-posta *</label><input class="form-input" id="cf-email" type="email" placeholder="ahmet@email.com"></div>
+            <div class="form-group"><label class="form-label">Telefon</label><input class="form-input" id="cf-phone" type="tel" placeholder="+90 5xx xxx xx xx"></div>
+            <div class="form-group"><label class="form-label">Konu</label><input class="form-input" id="cf-subject" type="text" placeholder="Davanızın konusu"></div>
+            <div class="form-group"><label class="form-label">Mesajınız *</label><textarea class="form-textarea" id="cf-message" placeholder="Hukuki durumunuzu kısaca açıklayın..." style="min-height:150px"></textarea></div>
+            <div style="display:flex;align-items:center;gap:.6rem;margin-bottom:1rem">
+              <input type="checkbox" id="cf-consent" style="width:16px;height:16px;cursor:pointer">
+              <label for="cf-consent" style="font-size:.8rem;color:var(--muted);cursor:pointer">Kişisel verilerimin işlenmesine onay veriyorum.</label>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="submitContactForm()">📨 Mesaj Gönder</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="map-container">
+            <iframe class="map-iframe" id="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48168.09!2d28.8553!3d41.0417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa4b9f1b6d0ef%3A0x4f47e1d8e6c5!2zQmHEn2PElWxhciwgxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1700000000000" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div style="margin-top:1.5rem;background:#fff;border:.5px solid var(--border);border-radius:8px;padding:1.4rem">
+            <h4 style="font-family:'Playfair Display',serif;color:var(--navy);margin-bottom:.9rem">Sık Sorulan Sorular</h4>
+            <div style="display:flex;flex-direction:column;gap:.75rem">
+              <details style="border:.5px solid var(--border);border-radius:6px;padding:.75rem">
+                <summary style="cursor:pointer;font-weight:600;color:var(--navy);font-size:.9rem">İlk danışma ücretsiz mi?</summary>
+                <p style="margin-top:.6rem;font-size:.85rem;color:var(--muted);line-height:1.6">Evet, ilk 30 dakikalık danışma ücretsizdir. Randevu almak için bizi arayabilir veya form doldurabilirsiniz.</p>
+              </details>
+              <details style="border:.5px solid var(--border);border-radius:6px;padding:.75rem">
+                <summary style="cursor:pointer;font-weight:600;color:var(--navy);font-size:.9rem">Dava süreçleri ne kadar sürer?</summary>
+                <p style="margin-top:.6rem;font-size:.85rem;color:var(--muted);line-height:1.6">Dava süresi, türüne ve mahkemeye göre değişmektedir. Detaylı bilgi için danışma randevusu alabilirsiniz.</p>
+              </details>
+              <details style="border:.5px solid var(--border);border-radius:6px;padding:.75rem">
+                <summary style="cursor:pointer;font-weight:600;color:var(--navy);font-size:.9rem">Online danışmanlık veriyor musunuz?</summary>
+                <p style="margin-top:.6rem;font-size:.85rem;color:var(--muted);line-height:1.6">Evet, video konferans ve telefon aracılığıyla online danışmanlık hizmeti sunmaktayız.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><a href="index.html" class="logo" style="color:#fff;font-size:1.1rem;padding:0;margin-bottom:.7rem">🦉 Baykuş Hukuk</a><p>İstanbul Bağcılar'da müvekkillerine güven ve uzmanlıkla hizmet vermektedir.</p></div>
+    <div class="footer-col"><h4>Sayfalar</h4><a href="makaleler.html">Makaleler</a><a href="gundem.html">Gündem</a><a href="hizmetler.html">Hizmetler</a></div>
+    <div class="footer-col"><h4>İletişim</h4><p>📍 Bağcılar, İstanbul</p><p>📞 +90 212 000 00 00</p><p>✉ info@baykushukuk.com</p><p>🕐 Pzt–Cum 09:00–18:00</p></div>
+  </div>
+  <div class="footer-bottom">© 2025 <span style="color:var(--gold)">Baykuş Hukuk</span> — Tüm hakları saklıdır.</div>
+</footer>
+
+<div id="notify" class="notify"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+function submitContactForm() {
+  const consent = document.getElementById('cf-consent').checked;
+  if (!consent) { notify('Lütfen kişisel verilerin işlenmesine onay verin.', 'error'); return; }
+
+  const name    = document.getElementById('cf-name').value.trim();
+  const email   = document.getElementById('cf-email').value.trim();
+  const phone   = document.getElementById('cf-phone').value.trim();
+  const subject = document.getElementById('cf-subject').value.trim();
+  const message = document.getElementById('cf-message').value.trim();
+
+  if (!name || !email || !message) { notify('Lütfen zorunlu (*) alanları doldurun.', 'error'); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { notify('Geçerli bir e-posta adresi giriniz.', 'error'); return; }
+
+  const messages = Store.get('contact_messages', []);
+  messages.unshift({ id: Date.now(), name, email, phone, subject: subject || 'İletişim Formu', message, date: formatDate(), read: false });
+  Store.set('contact_messages', messages);
+
+  ['cf-name','cf-email','cf-phone','cf-subject','cf-message'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.value = '';
+  });
+  document.getElementById('cf-consent').checked = false;
+  notify('Mesajınız alındı. En kısa sürede yanıtlayacağız. ✓');
+}
+
+// Harita URL'sini settings'ten güncelle
+document.addEventListener('DOMContentLoaded', () => {
+  const s = getSettings();
+  if (s.mapUrl) document.getElementById('map-frame').src = s.mapUrl;
+});
+</script>
+</body>
+</html>

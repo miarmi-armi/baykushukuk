@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hukuki Linkler — Baykuş Hukuk</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-left"><span>📞 <a href="tel:+902120000000">+90 212 000 00 00</a></span></div>
+  <div class="topbar-right"><span>🕐 Pzt–Cum 09:00–18:00</span></div>
+</div>
+<nav>
+  <a href="index.html" class="logo"><span class="logo-owl">🦉</span> Baykuş Hukuk</a>
+  <div class="nav-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="makaleler.html">Makaleler</a>
+    <a href="gundem.html">Gündem</a>
+    <a href="hizmetler.html">Hizmetler</a>
+    <a href="linkler.html" class="active">Hukuki Linkler</a>
+    <a href="iletisim.html">İletişim</a>
+    <a href="admin/giris.html" class="nav-admin-btn">🔒 Admin</a>
+  </div>
+</nav>
+<div class="breadcrumb"><a href="index.html">Ana Sayfa</a> <span>›</span> <strong>Hukuki Linkler</strong></div>
+<div class="main-wrap full">
+  <div class="content-area">
+    <div class="section">
+      <div class="section-title">Hukuki Kaynaklar & Faydalı Linkler</div>
+      <div class="gold-line"></div>
+      <p class="section-subtitle">Güvenilir hukuki bilgi kaynaklarına erişim için derlediğimiz bağlantılar</p>
+      <div class="links-grid" id="links-grid"></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><a href="index.html" class="logo" style="color:#fff;font-size:1.1rem;padding:0;margin-bottom:.7rem">🦉 Baykuş Hukuk</a><p>İstanbul Bağcılar'da faaliyet gösteren Baykuş Hukuk Bürosu.</p></div>
+    <div class="footer-col"><h4>Sayfalar</h4><a href="makaleler.html">Makaleler</a><a href="iletisim.html">İletişim</a></div>
+    <div class="footer-col"><h4>İletişim</h4><p>📞 +90 212 000 00 00</p><p>✉ info@baykushukuk.com</p></div>
+  </div>
+  <div class="footer-bottom">© 2025 <span style="color:var(--gold)">Baykuş Hukuk</span></div>
+</footer>
+<div id="notify" class="notify"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const links = getLinks();
+  const el = document.getElementById('links-grid');
+  el.innerHTML = links.map(l => `
+    <a href="${l.url}" target="_blank" rel="noopener noreferrer" class="link-card">
+      <div class="link-icon-box">${l.icon}</div>
+      <div>
+        <div class="link-info-title">${l.name}</div>
+        <div class="link-info-desc">${l.desc}</div>
+        <div class="link-url">${l.url}</div>
+      </div>
+    </a>
+  `).join('');
+});
+</script>
+</body>
+</html>
